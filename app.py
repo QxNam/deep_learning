@@ -38,7 +38,7 @@ def input_features():
     return [sepal_length,sepal_width,petal_length,petal_width]
 
 def main():
-    st.image('images\\backgound.png', use_column_width='always', width=20)
+    st.image('images/backgound.png')
     st.markdown('<h1 style="text-align: center;">🌷 Flower Classification</h1>', unsafe_allow_html=True)
     st.markdown('---')
     data = input_features()
@@ -46,7 +46,7 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown('<h1 style="text-align: center;">Image flower</h1>', unsafe_allow_html=True)
-        st.image(f'images\\{pred}_flower.png', width=600)
+        st.image(f'images/{pred}.png', width=600)
 
     with col2:
         st.markdown('<h1 style="text-align: center;">Prediction</h1>', unsafe_allow_html=True)
