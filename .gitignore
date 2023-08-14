@@ -1,0 +1,5 @@
+.venv
+iris
+__pycache__
+*.pdf
+*.ipynb
