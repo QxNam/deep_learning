@@ -21,7 +21,6 @@ def predict(features):
     decode = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
     X_new = np.array([features]).reshape(1,-1)
     prediction = model.predict(X_new)
-    print(prediction)
     return decode[prediction[0]]
     
 def input_features():
@@ -47,7 +46,7 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         st.markdown('<h1 style="text-align: center;">Image flower</h1>', unsafe_allow_html=True)
-        st.image(f'images\\{pred}_flower.png', width=500)
+        st.image(f'images\\{pred}_flower.png', width=600)
 
     with col2:
         st.markdown('<h1 style="text-align: center;">Prediction</h1>', unsafe_allow_html=True)
